@@ -1,0 +1,1 @@
+# kata-weapon-2
