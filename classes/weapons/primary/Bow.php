@@ -1,7 +1,13 @@
 <?php 
-		class Bow extends Weapon {
-			public function attack() {
-					echo " threw an arrow!";
-			}
-		}
+class Bow extends Weapon {
+
+	public __construct function() {
+		$this->range = 8.0;
+		$this->damage = 1.5;
+	}
+
+	public function attack() {
+			echo " threw an arrow!";
+	}
+}
 ?>
