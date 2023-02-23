@@ -3,8 +3,8 @@
 		private float  $life;
 		private float  $magic;
 		private string $name;
-		private Weapon $main_weapon;
-		private Weapon $secondary_weapon;
+		private ?Weapon $main_weapon;
+		private ?Weapon $secondary_weapon;
 		
 		public function __construct(float $life,float $magic,string $name,Weapon $main_weapon = null, Weapon $secondary_weapon = null) 
 		{
@@ -29,7 +29,7 @@
 			echo '<br>';
 		}
 
-		public function useSecondaryWeapon(Weapon $weapon) {
+		public function useSecondaryWeapon() {
 			echo $this->name." ";
 			$this->secondary_weapon->attack();
 			echo '<br>';

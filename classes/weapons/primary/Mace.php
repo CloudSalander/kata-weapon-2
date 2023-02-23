@@ -1,7 +1,7 @@
 <?php 
 class Mace extends Weapon {
 
-	public __construct function() {
+	public function __construct() {
 		$this->range = 3.0;
 		$this->damage = 8.0;
 	}

@@ -1,7 +1,7 @@
 <?php 
 class Bow extends Weapon {
 
-	public __construct function() {
+	public  function __construct() {
 		$this->range = 8.0;
 		$this->damage = 1.5;
 	}

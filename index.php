@@ -1,20 +1,20 @@
 <?php
 
 require('classes/Hero.php');
-require('classes/weapons/Mace.php');
-require('classes/weapons/Sword.php');
-require('classes/weapons/Bow.php');
+require('classes/weapons/Weapon.php');
+require('classes/weapons/primary/Mace.php');
+require('classes/weapons/primary/Sword.php');
+require('classes/weapons/primary/Bow.php');
+require('classes/weapons/secondary/Bomb.php');
+require('classes/weapons/secondary/Shield.php');
 
 $hero = new Hero(20,15,"Cloud");
 
-$hero->setWeapon(new Sword());
-$hero->useWeapon();
+$hero->setPrimaryWeapon(new Sword());
+$hero->usePrimaryWeapon();
 	
-$hero->setWeapon(new Bow());
-$hero->useWeapon();
-
-$hero->setWeapon(new Mace());
-$hero->useWeapon();
+$hero->setSecondaryWeapon(new Bomb());
+$hero->useSecondaryWeapon();
 
 
 ?>
