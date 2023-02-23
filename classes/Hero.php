@@ -24,15 +24,19 @@
 		}
 
 		public function usePrimaryWeapon() {
-			echo $this->name." ";
-			$this->main_weapon->attack();
-			echo '<br>';
+			if(isset($this->main_weapon)) {
+				echo $this->name." ";
+				$this->main_weapon->attack();	
+			}
+			else echo "No primary weapon assigned!\n";
 		}
 
 		public function useSecondaryWeapon() {
-			echo $this->name." ";
-			$this->secondary_weapon->attack();
-			echo '<br>';
+			if(isset($this->secondary_weapon)) {
+				echo $this->name." ";
+				$this->secondary_weapon->attack();
+			}
+			else echo "No secondary weapon assigned!\n";
 		}
 	}	
 ?>

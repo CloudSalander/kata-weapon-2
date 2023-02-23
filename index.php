@@ -10,6 +10,9 @@ require('classes/weapons/secondary/Shield.php');
 
 $hero = new Hero(20,15,"Cloud");
 
+$hero->usePrimaryWeapon();
+$hero-> useSecondaryWeapon();
+
 $hero->setPrimaryWeapon(new Sword());
 $hero->usePrimaryWeapon();
 
