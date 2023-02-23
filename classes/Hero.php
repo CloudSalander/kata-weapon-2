@@ -10,7 +10,7 @@
 			$this->life = $life;
 			$this->magic = $magic;
 			$this->name = $name;
-			$this->weapon = $main_weapon;
+			$this->main_weapon = $main_weapon;
 		}
 
 		public function setWeapon(Weapon $weapon) {
