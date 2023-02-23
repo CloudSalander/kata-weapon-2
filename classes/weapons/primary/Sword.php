@@ -7,7 +7,7 @@ class Sword extends Weapon {
 	}
 
 	public function attack() {
-			echo " attacked with the sword!";
+			echo " attacked with the sword to distance ".$this->range." and made ".$this->damage." damage!\n";
 	}
 }
 ?>

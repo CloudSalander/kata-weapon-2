@@ -7,7 +7,7 @@ class Mace extends Weapon {
 	}
 
 	public function attack() {
-			echo " crushed with her mace!";
+			echo " crushed with the mace to distance ".$this->range." and made ".$this->damage." damage!\n";
 	}
 }
 ?>

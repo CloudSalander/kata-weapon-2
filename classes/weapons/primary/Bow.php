@@ -7,7 +7,7 @@ class Bow extends Weapon {
 	}
 
 	public function attack() {
-			echo " threw an arrow!";
+			echo " threw an arrow to distance ".$this->range." and made ".$this->damage." damage!\n";
 	}
 }
 ?>

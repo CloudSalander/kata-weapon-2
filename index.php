@@ -12,9 +12,20 @@ $hero = new Hero(20,15,"Cloud");
 
 $hero->setPrimaryWeapon(new Sword());
 $hero->usePrimaryWeapon();
+
+$hero->setPrimaryWeapon(new Bow());
+$hero->usePrimaryWeapon();
+
+$hero->setPrimaryWeapon(new Mace());
+$hero->usePrimaryWeapon();
 	
 $hero->setSecondaryWeapon(new Bomb());
 $hero->useSecondaryWeapon();
+
+$hero->setSecondaryWeapon(new Shield());
+$hero->useSecondaryWeapon();
+
+
 
 
 ?>

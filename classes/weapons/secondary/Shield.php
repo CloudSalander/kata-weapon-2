@@ -6,7 +6,7 @@ class Shield extends Weapon {
 	}
 
 	public function attack() {
-		echo " attacked with the sword!";
+		echo " protected with the shield!\n";
 	}
 }
 ?>

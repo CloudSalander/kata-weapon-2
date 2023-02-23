@@ -6,7 +6,7 @@ class Bomb extends Weapon {
 	}
 
 	public function attack() {
-		echo " attacked with the sword!";
+		echo " threw a bomb to distance ".$this->range." and made ".$this->damage." damage!\n";
 	}
 }
 
